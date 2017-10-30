@@ -1,0 +1,60 @@
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"//用户名
+
+$ mkdir learngit
+$ cd learngit
+$ pwd
+/Users/michael/learngit  //创建空的git库
+
+$ git init //使库变为可管理的库
+
+$ git add readme.txt //添加文件到库
+$ git commit -m "wrote a readme file" //添加文件的备注
+
+$ git status //查看库当前的状态是否有需要commit的内容
+
+$ git diff readme.txt // 查看文件的改动
+
+$ git log //查看日志
+
+$ git log --pretty=oneline 展示历史版本号
+
+$ git reset --hard HEAD^ //回到上个版本
+$ git reset --hard HEAD^^  //回到上上个版本
+
+ 
+
+$ git reset --hard 3628164 // 想要回到的版本号
+
+$ git reflog //找到之前的命令日志
+
+$ git checkout -- readme.txt // 撤销工作区的修改
+
+$ git reset HEAD readme.txt //撤销暂存区的修改
+
+$ rm test.txt  //删除版本库文件（但是会和工作区不一样，可以用status命令查看）
+
+$ git rm test.txt  
+$ git commit -m "wrote a readme file"  //版本库中删除并备注
+
+$ git remote add origin git@github.com:xffscg/professor.git   //推到远程库上面
+
+$ git push -u origin master //推送内容（第一次）
+
+$ git push origin master//推送内容
+
+$ git clone git@github.com:xffsgc/professorNomal.git //克隆远程库
+
+$ cd gitskills
+$ ls
+
+$ git checkout -b dev //创建并切换分支
+
+$ git branch dev
+$ git checkout dev
+
+$ git branch //查看当前分支
+
+$ git add readme.txt 
+$ git commit -m "branch test"  //分支上提交
+
