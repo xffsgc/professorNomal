@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>专家列表</title>
+		<link rel="stylesheet" type="text/css" href="../css/frame.css">
+	</head>
+	<body>
+		<div class="divtop">
+			<img src="../img/icon.png" alt="icon" width="300" height="50">
+			<input type="text" name="input" value="输入">
+		</div>
+		<div class="leftred"></div>
+		<div class="hgray"></div>
+		<div class="vgray"></div>
+		<div class="infor">
+			<h4 class="title">李怀中</h4>
+			<p>机构：清华大学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;领域：眉形识别</p>  <!--根据字数调整空格数-->
+			<p>成果数：6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专利数：8</p>
+			
+			<h4 class="title">赵晓波</h4>
+			<p>机构：北京邮电大学&nbsp;&nbsp;&nbsp;&nbsp;领域：眉形识别</p>  <!--根据字数调整空格数-->
+			<p>成果数：5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专利数：6</p>
+			
+			<h4 class="title">高鹏</h4>
+			<p>机构：中国农业大学&nbsp;&nbsp;&nbsp;&nbsp;领域：虹膜识别</p>  <!--根据字数调整空格数-->
+			<p>成果数：4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专利数：4</p>
+			
+			<h4 class="title">李明</h4>
+			<p>机构：中国矿业大学&nbsp;&nbsp;&nbsp;&nbsp;领域：人脸识别</p>  <!--根据字数调整空格数-->
+			<p>成果数：3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专利数：5</p>
+			
+		</div>
+		<div class="infor_bottom">
+			<p>"菜冬花"不是专家？</p>
+			<p class="infor_btm"><a href="#jigou">点击这里查机构>></a></p>
+			<p class="infor_btm"><a href="jishu">点击这里查技术>></a></p>
+		</div>
+		<div class="people">
+			<a href="index.html"><img src="../img/people.png" alt="people" height="40px" width:"40px"
+				style="position:absolute;top:120px;padding:15px;"></a>
+		</div>
+		
+		<div class="return">
+			<a href="index.html"><img src="../img/return.jpg" alt="return" height="45px" width:"45px"
+				style="position:absolute;top:1200px;padding:15px;"></a>
+		</div>
+		<canvas id="canvas" width="600px" height="900px"
+			style="position:absolute;top:80px;left:400px;">您的浏览器不支持HTML5 canvas标签。</canvas>
+			<script>
+				var c=document.getElementById("canvas");
+			    var cxt=c.getContext("2d");
+			    //线条
+			    cxt.moveTo(150,120);//人脸识别-虹膜识别
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(450,200);//人脸识别-脸型识别
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(320,400);//人脸识别-眉形识别
+				cxt.lineTo(300,250);
+				cxt.stroke();
+			     //人脸识别
+				cxt.fillStyle="#ff8c00";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,250,30,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("人脸识别",270,250);
+				//虹膜识别
+				cxt.fillStyle="green";  //背景色
+				cxt.beginPath();
+				cxt.arc(150,120,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("虹膜识别",150,100);
+				//脸型识别
+				cxt.fillStyle="green";  //背景色
+				cxt.beginPath();
+				cxt.arc(450,200,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("脸型识别",390,170);
+				//眉形识别
+				cxt.fillStyle="green";  //背景色
+				cxt.beginPath();
+				cxt.arc(320,400,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("眉形识别",340,400);
+				//技术名称
+				cxt.fillStyle="#ff8c00";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,550,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("技术名称",325,555);
+				//相关类目
+				cxt.fillStyle="green";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,600,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("相关类目",325,605);
+			</script>
+	</body>
+</html>
