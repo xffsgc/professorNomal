@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>机构</title>
+		<link rel="stylesheet" type="text/css" href="../css/frame.css">
+	</head>
+	<body>
+		<div class="divtop">
+			<img src="../img/icon.png" alt="icon" width="300" height="50">
+			<input type="text" name="input" value="输入">
+		</div>
+		<div class="leftred"></div>
+		<div class="hgray"></div>
+		<div class="vgray"></div>
+		<div class="infor">
+			<h4 class="title">小米科技有限责任公司</h4>
+			<p>成立时间：2014-03-03</p>  <!--根据字数调整空格数-->
+			<p>领域：人脸识别</p>
+			
+			<h4 class="title">宁波范小米化妆品有限公司</h4>
+			<p>成立时间：2013-06-26</p>
+			<p>领域：化妆品</p>	
+			
+			<h4 class="title">宁波范小米贸易有限公司</h4>
+			<p>成立时间：2013-01-15</p>
+			<p>领域：经贸</p>
+
+			<h4 class="title">深圳市小米和大米文化传播有限公司</h4>
+			<p>成立时间：2010-10-27</p>  
+			<p>领域：文化传播</p>
+			
+		</div>
+		<div class="infor_bottom">
+			<p>"小米"不是机构？</p>
+			<p class="infor_btm"><a href="#jigou">点击这里查专家>></a></p>
+			<p class="infor_btm"><a href="jishu">点击这里查技术>></a></p>
+		</div>
+		<div class="return">
+			<a href="index.html"><img src="../img/return.jpg" alt="return" height="45px" width:"45px"
+				style="position:absolute;top:1200px;padding:15px;"></a>
+		</div>
+		<canvas id="canvas" width="600px" height="900px"
+			style="position:absolute;top:80px;left:400px;">您的浏览器不支持HTML5 canvas标签。</canvas>
+			<script>
+				var c=document.getElementById("canvas");
+			    var cxt=c.getContext("2d");
+			    //线条
+				cxt.moveTo(300,250);//小米-小米笔记本
+				cxt.lineTo(315,150);
+				cxt.stroke();
+				cxt.moveTo(450,200);//小米-人脸识别
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(450,300);//小米-李怀中
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(320,400);//小米-白秋冬
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(180,380);//小米-小米盒子
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(100,320);//小米-4k输出
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(100,220);//小米-小米电视3
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(150,120);//小米-4核手机
+				cxt.lineTo(300,250);
+				cxt.stroke();
+			    //小米
+				cxt.fillStyle="#ff8c00";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,250,30,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("小米",280,250);
+				//小米笔记本Air 12.5英寸
+				cxt.fillStyle="yellow";  //背景色
+				cxt.beginPath();
+				cxt.arc(315,150,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("小米笔记本Air 12.5英寸",300,125);
+				//人脸识别
+				cxt.fillStyle="#d00000";  //背景色
+				cxt.beginPath();
+				cxt.arc(450,200,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("人脸识别",470,200);
+				//李怀中
+				cxt.fillStyle="deepskyblue";  //背景色
+				cxt.beginPath();
+				cxt.arc(450,300,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("李怀中",470,300);
+				//白秋冬
+				cxt.fillStyle="deepskyblue";  //背景色
+				cxt.beginPath();
+				cxt.arc(320,400,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("白秋冬",340,400);
+				//小米盒子
+				cxt.fillStyle="yellow";  //背景色
+				cxt.beginPath();
+				cxt.arc(180,380,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("小米盒子",180,410);
+				//小米电视3
+				cxt.fillStyle="yellow";  //背景色
+				cxt.beginPath();
+				cxt.arc(100,220,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("小米电视3",100,200);
+				//4k输出
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(100,320,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("4k输出",100,300);
+				//4核手机
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(150,120,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("4核手机",150,100);
+				//所属领域
+				cxt.fillStyle="#d00000";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,500,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("所属领域",325,505);
+				//成果
+				cxt.fillStyle="yellow";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,550,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("成果",325,555);
+				//专利
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,600,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("专利",325,605);
+				//成果
+				cxt.fillStyle="#ff8c00";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,650,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("成果",325,655);
+				//专家
+				cxt.fillStyle="deepskyblue";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,700,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("专家",325,705);
+			</script>
+	</body>
+</html>
