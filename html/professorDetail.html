@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>专家详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/frame.css">
+	</head>
+	<body>
+		<div class="divtop">
+			<img src="../image/No.6.png" alt="icon" width="300" height="50">
+			<input type="text" name="input" value="输入">
+		</div><!--顶部常规设计-->
+		<div class="leftred"></div> 
+		<div class="hgray"></div>
+		<div class="vgray"></div>
+		<div class="infor">
+			<h4 class="title">李怀中</h4>
+			<p>专家履历：<br/>1973-1978 北京邮电大学 计算机技术 博士<br/>1971-1972 北京邮电大学 计算机技术 硕士<br/>1967-1971 北京邮电大学 计算机技术 学士</p>
+			<p>机构：北京邮电大学</p>
+			<p>成果：<br/>基于视频的多分类器融合的实时人脸检测与识别;<br/>基于计算机视觉的三维数字化技术</p> 
+			<p>相关专利：<br/>计算机视觉应用处理;<br/>基于视觉的计算机视觉技术；<br/>用于计算机视觉应用程序的自适应数据路径</p>
+		</div>
+		<div class="infor_bottom">
+			<p>"李怀中"不是专家？</p>
+			<p class="infor_btm"><a href="#jigou">点击这里查机构>></a></p>
+			<p class="infor_btm"><a href="jishu">点击这里查技术>></a></p>
+		</div>
+		<canvas id="canvas" width="600px" height="900px"
+			style="position:absolute;top:80px;left:400px;">您的浏览器不支持HTML5 canvas标签。</canvas>
+			<script>
+				var c=document.getElementById("canvas");
+			    var cxt=c.getContext("2d");
+			    //线条
+				cxt.moveTo(100,220);//人脸识别-成果
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(450,200);//人脸识别-机构
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(180,380);//人脸识别-专利
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(190,380);//人脸识别-专利
+				cxt.lineTo(340,410);
+				cxt.stroke();
+				cxt.moveTo(450,220);//人脸识别-专利
+				cxt.lineTo(450,340);
+				cxt.stroke();
+				cxt.moveTo(450,220);//人脸识别-专利
+				cxt.lineTo(550,330);
+				cxt.stroke();
+				 //人脸识别
+				cxt.fillStyle="#ff8c00";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,250,30,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("李怀中",270,250);
+				//机构
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(450,200,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("银晨嵌入式人脸识别器",470,200);
+				//机构
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(450,350,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("银晨嵌入式人脸识别器",470,370);
+				//机构
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(550,330,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("银晨嵌入式人脸识别器",550,350);
+				//成果
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(100,220,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("北京邮电大学",100,200);
+				//专利
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(180,380,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("多功能感知技术研究",180,415);
+				//技术
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(350,420,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("多功能感知技术研究",260,450);
+				//技术名称
+				cxt.fillStyle="#ff8c00";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,550,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("领域",325,555);
+				//相关细分
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,600,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("相关机构",325,605);
+			</script>
+	</body>
+</html>
