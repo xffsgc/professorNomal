@@ -1,0 +1,53 @@
+            /*首页的样式*/
+			body{
+				background-color:#980000;
+				padding:0;
+				margin:0;
+			}
+			.divtop{
+				background-color:white;
+				padding:15px;
+				margin:0;
+				width:100%;
+				height:50px;
+			}
+			.divcenter{
+				
+				background-color:white;
+				margin:auto;
+				margin-top:60px;
+				width:60%;
+				height:300px;
+			}
+		    .divcontent1 a{
+				color:#980000;
+				text-decoration:none;
+				font-size:20px;
+				margin-left:120px;
+			    padding:0px;
+			}
+			
+			.divcenter input{
+				height:30px;
+				width:500px;
+				margin-top:50px;
+				margin-left:150px;
+				color:lightgray;
+				border-color:#c80000;
+			}
+			.divcenter p{
+				color:darkgray;
+				font-size:15px;
+				margin-left:150px;
+				padding-top:5px;
+			}
+			#btn{
+				background-color:#980000;
+				width:250px;
+				height:45px;
+				color:white;
+				font-size:15px;
+				margin-left:250px;
+				
+			}
+	
