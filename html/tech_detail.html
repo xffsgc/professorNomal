@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>技术详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/frame.css">
+	</head>
+	<body>
+		<div class="divtop">
+			<img src="../img/icon.png" alt="icon" width="300" height="50">
+			<input type="text" name="input" value="输入">
+		</div>
+		<div class="leftred"></div>
+		<div class="hgray"></div>
+		<div class="vgray"></div>
+		<div class="infor">
+			<h4 class="title">虹膜识别</h4>
+			<p>相关专家数：8</p>  <!--根据字数调整空格数-->
+			<p>相关专利数：36</p>
+			<p>相关成果数：28</p>
+			<p>相关机构数：10</p>
+			
+			<h4 class="title">脸型识别</h4>
+			<p>相关专家数：6</p>  <!--根据字数调整空格数-->
+			<p>相关专利数：10</p>
+			<p>相关成果数：8</p>
+			<p>相关机构数：4</p>
+			
+			<h4 class="title">眉形识别</h4>
+			<p>相关专家数：12</p>  <!--根据字数调整空格数-->
+			<p>相关专利数：20</p>
+			<p>相关成果数：13</p>
+			<p>相关机构数：8</p>
+
+			
+		</div>
+		<div class="infor_bottom">
+			<p>"人脸识别"不是技术？</p>
+			<p class="infor_btm"><a href="#jigou">点击这里查机构>></a></p>
+			<p class="infor_btm"><a href="jishu">点击这里查专家>></a></p>
+		</div>
+		<div class="people">
+			<a href="index.html"><img src="../img/people.png" alt="people" height="40px" width:"40px"
+				style="position:absolute;top:120px;padding:15px;"></a>
+		</div>
+		<div class="drift">
+			<a href="index.html"><img src="../img/drift.png" alt="drift" height="40px" width:"40px"
+				style="position:absolute;top:200px;padding:15px;"></a>
+		</div>
+		<div class="return">
+			<a href="index.html"><img src="../img/return.jpg" alt="return" height="45px" width:"45px"
+				style="position:absolute;top:1200px;padding:15px;"></a>
+		</div>
+		<canvas id="canvas" width="600px" height="900px"
+			style="position:absolute;top:80px;left:400px;">您的浏览器不支持HTML5 canvas标签。</canvas>
+			<script>
+				var c=document.getElementById("canvas");
+			    var cxt=c.getContext("2d");
+			    //线条
+			    cxt.moveTo(150,120);//人脸识别-虹膜识别
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(450,200);//人脸识别-脸型识别
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(320,400);//人脸识别-眉形识别
+				cxt.lineTo(300,250);
+				cxt.stroke();
+			     //人脸识别
+				cxt.fillStyle="#ff8c00";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,250,30,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("人脸识别",270,250);
+				//虹膜识别
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(150,120,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("虹膜识别",150,100);
+				//脸型识别
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(450,200,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("脸型识别",390,170);
+				//眉形识别
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(320,400,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("眉形识别",340,400);
+				//技术名称
+				cxt.fillStyle="#ff8c00";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,550,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("技术名称",325,555);
+				//相关细分
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,600,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("相关细分",325,605);
+			</script>
+	</body>
+</html>
