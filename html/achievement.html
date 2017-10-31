@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>成果</title>
+		<link rel="stylesheet" type="text/css" href="../css/frame.css">
+	</head>
+	<body>
+		<div class="divtop">
+			<img src="../img/icon.png" alt="icon" width="300" height="50">
+			<input type="text" name="input" value="输入">
+		</div>
+		<div class="leftred"></div>
+		<div class="hgray"></div>
+		<div class="vgray"></div>
+		<div class="infor">
+			<h4 class="title">多功能感知技术研究</h4>
+			<p>机构：清华大学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;领域：人工智能</p>  <!--根据字数调整空格数-->
+			<p>发布时间：2016-12-12</p>
+			
+			<h4 class="title">基于物联网技术的视频监控告警系统</h4>
+			<p>机构：北京邮电大学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;领域：人工智能</p>
+			<p>发布时间：2016-12-31</p>	
+			
+			<h4 class="title">银晨嵌入式人脸识别器</h4>
+			<p>机构：中国农业大学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;领域：人工智能</p>
+			<p>发布时间：2016-10-13</p>
+
+			
+		</div>
+		<div class="infor_bottom">
+			<p>"人工智能"不是技术？</p>
+			<p class="infor_btm"><a href="#jigou">点击这里查专家>></a></p>
+			<p class="infor_btm"><a href="jishu">点击这里查机构>></a></p>
+		</div>
+		<div class="return">
+			<a href="index.html"><img src="../img/return.jpg" alt="return" height="45px" width:"45px"
+				style="position:absolute;top:1200px;padding:15px;"></a>
+		</div>
+		<canvas id="canvas" width="600px" height="900px"
+			style="position:absolute;top:80px;left:400px;">您的浏览器不支持HTML5 canvas标签。</canvas>
+			<script>
+				var c=document.getElementById("canvas");
+			    var cxt=c.getContext("2d");
+			    //线条
+			    cxt.moveTo(150,120);//人脸识别-多功能感知
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(450,200);//人脸识别-基于物联网技术
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(320,400);//人脸识别-银晨嵌入式
+				cxt.lineTo(300,250);
+				cxt.stroke();
+			     //人脸识别
+				cxt.fillStyle="#ff8c00";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,250,30,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("人脸识别",270,250);
+				//多功能感知技术研究
+				cxt.fillStyle="green";  //背景色
+				cxt.beginPath();
+				cxt.arc(150,120,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("多功能感知技术研究",150,100);
+				//基于物联网技术的视频监控告警系统
+				cxt.fillStyle="green";  //背景色
+				cxt.beginPath();
+				cxt.arc(450,200,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("基于物联网技术的视频监控告警系统",350,170);
+				//银晨嵌入式人脸识别器
+				cxt.fillStyle="deepskyblue";  //背景色
+				cxt.beginPath();
+				cxt.arc(320,400,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("银晨嵌入式人脸识别器",340,400);
+				//技术
+				cxt.fillStyle="#ff8c00";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,550,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("技术",325,555);
+				//成果
+				cxt.fillStyle="green";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,600,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("成果",325,605);
+			</script>
+	</body>
+</html>
