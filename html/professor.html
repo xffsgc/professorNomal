@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>专家</title>
+		<script src="../js/canvas_pro.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/frame.css">
+		
+	</head>
+	<body>
+		<div class="divtop">
+			<img src="../img/icon.png" alt="icon" width="300" height="50">
+			<input type="text" name="input" value="输入">
+		</div>
+		<div class="leftred"></div>
+		<div class="hgray"></div>
+		<div class="vgray"></div>
+		<div class="infor">
+			<h4 class="title">李怀中</h4>
+			<p>机构：北京邮电大学&nbsp;&nbsp;&nbsp;领域：人脸识别</p>  <!--根据字数调整空格数-->
+			<p>成果数：6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专利数：8</p>
+			
+			<h4 class="title">李怀中</h4>
+			<p>机构：清华大学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;领域：机器学习</p>
+			<p>成果数：5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专利数：6</p>
+			
+			<h4 class="title">李怀中</h4>
+			<p>机构：中国农业大学&nbsp;&nbsp;&nbsp;领域：园林艺术</p>  
+			<p>成果数：4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专利数：5</p>
+			
+			<h4 class="title">李怀中</h4>
+			<p>机构：中国矿业大学&nbsp;&nbsp;&nbsp;领域：新能源</p>  
+			<p>成果数：3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专利数：5</p>
+			
+		</div>
+		<div class="infor_bottom">
+			<p>"李怀中"不是专家？</p>
+			<p class="infor_btm"><a href="#jigou">点击这里查机构>></a></p>
+			<p class="infor_btm"><a href="jishu">点击这里查技术>></a></p>
+		</div>
+		<div class="return">
+			<a href="index.html"><img src="../img/return.jpg" alt="return" height="45px" width:"45px"
+				style="position:absolute;top:1200px;padding:15px;"></a>
+		</div>
+		<canvas id="canvas" width="600px" height="500px"
+			style="position:absolute;top:80px;left:400px;">您的浏览器不支持HTML5 canvas标签。</canvas>
+		<script>
+			var c=document.getElementById("canvas");
+			var cxt=c.getContext("2d");
+			//李怀中
+			cxt.fillStyle="#ff8c00";  //背景色
+			cxt.beginPath();
+			cxt.arc(300,250,30,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+			cxt.closePath();
+			cxt.fill();
+			var gradient=cxt.createLinearGradient(0,0,c.width,0);
+			gradient.addColorStop("0","black");
+			cxt.fillStyle=gradient;
+			cxt.font="15px Arial";
+			cxt.fillText("李怀中",275,250);
+			//cxt.stroke();
+			
+			//北京邮电大学
+			cxt.fillStyle="#d00000";  //背景色
+			cxt.beginPath();
+			cxt.arc(200,150,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+			cxt.closePath();
+			cxt.fill();
+			var gradient=cxt.createLinearGradient(0,0,c.width,0);
+			gradient.addColorStop("0","black");
+			cxt.fillStyle=gradient;
+			cxt.font="15px Arial";
+			cxt.fillText("北京邮电大学",150,120);
+			
+			//多功能感知技术研究
+			cxt.fillStyle="#228b22";  //背景色
+			cxt.beginPath();
+			cxt.arc(400,150,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+			cxt.closePath();
+			cxt.fill();
+			var gradient=cxt.createLinearGradient(0,0,c.width,0);
+			gradient.addColorStop("0","black");
+			cxt.fillStyle=gradient;
+			cxt.font="15px Arial";
+			cxt.fillText("多功能感知技术研究",350,120);
+			
+			//基于语音识别的感知技术
+			cxt.fillStyle="yellow";  //背景色
+			cxt.beginPath();
+			cxt.arc(425,250,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+			cxt.closePath();
+			cxt.fill();
+			var gradient=cxt.createLinearGradient(0,0,c.width,0);
+			gradient.addColorStop("0","black");
+			cxt.fillStyle=gradient;
+			cxt.font="15px Arial";
+			cxt.fillText("基于语音识别的感知技术",400,220);
+			//线条
+			cxt.moveTo(220,160);
+			cxt.lineTo(280,230);
+			cxt.stroke();
+			
+			
+		</script>
+	</body>
+</html>
