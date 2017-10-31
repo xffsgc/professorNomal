@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>技术</title>
+		<link rel="stylesheet" type="text/css" href="../css/frame.css">
+	</head>
+	<body>
+		<div class="divtop">
+			<img src="../img/icon.png" alt="icon" width="300" height="50">
+			<input type="text" name="input" value="输入">
+		</div>
+		<div class="leftred"></div>
+		<div class="hgray"></div>
+		<div class="vgray"></div>
+		<div class="infor">
+			<h4 class="title">人脸识别</h4>
+			<p>相关专家数：8</p>  <!--根据字数调整空格数-->
+			<p>相关专利数：36</p>
+			<p>相关成果数：28</p>
+			<p>相关机构数：10</p>
+			
+			
+		</div>
+		<div class="infor_bottom">
+			<p>"人脸识别"不是技术？</p>
+			<p class="infor_btm"><a href="#jigou">点击这里查机构>></a></p>
+			<p class="infor_btm"><a href="jishu">点击这里查专家>></a></p>
+		</div>
+		<div class="people">
+			<a href="index.html"><img src="../img/people.png" alt="people" height="40px" width:"40px"
+				style="position:absolute;top:120px;padding:15px;"></a>
+		</div>
+		<div class="drift">
+			<a href="index.html"><img src="../img/drift.png" alt="drift" height="40px" width:"40px"
+				style="position:absolute;top:200px;padding:15px;"></a>
+		</div>
+		<canvas id="canvas" width="600px" height="900px"
+			style="position:absolute;top:80px;left:400px;">您的浏览器不支持HTML5 canvas标签。</canvas>
+			<script>
+				var c=document.getElementById("canvas");
+			    var cxt=c.getContext("2d");
+			    //线条
+			    cxt.moveTo(300,250);//人脸识别-专家
+				cxt.lineTo(315,150);
+				cxt.stroke();
+				cxt.moveTo(100,220);//人脸识别-成果
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(450,200);//人脸识别-机构
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(180,380);//人脸识别-专利
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				cxt.moveTo(450,300);//人脸识别-技术
+				cxt.lineTo(300,250);
+				cxt.stroke();
+				 //人脸识别
+				cxt.fillStyle="#ff8c00";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,250,30,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("人脸识别",270,250);
+				//专家
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(315,150,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("专家",300,125);
+				//机构
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(450,200,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("机构",470,200);
+				//成果
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(100,220,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("成果",100,200);
+				//专利
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(180,380,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("专利",180,415);
+				//技术
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(450,300,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("技术",470,305);
+				//技术名称
+				cxt.fillStyle="#ff8c00";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,550,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("技术名称",325,555);
+				//相关细分
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(300,600,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("相关细分",325,605);
+			</script>
+	</body>
+</html>
