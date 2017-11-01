@@ -37,104 +37,103 @@
 			<p class="infor_btm"><a href="jishu">点击这里查技术>></a></p>
 		</div>
 		<div class="return">
-			<a href="index.html"><img src="../img/return.jpg" alt="return" height="45px" width:"45px"
+			<a href="index.html"><img src="../img/return.png" alt="return" height="45px" width:"45px"
 				style="position:absolute;top:1200px;padding:15px;"></a>
 		</div>
-		<canvas id="canvas" width="600px" height="900px"
+		<canvas id="canvas" width="800px" height="900px"
 			style="position:absolute;top:80px;left:400px;">您的浏览器不支持HTML5 canvas标签。</canvas>
 			<script>
 				var c=document.getElementById("canvas");
 			    var cxt=c.getContext("2d");
 			    //线条
-				cxt.moveTo(100,220);//人脸识别-成果
-				cxt.lineTo(300,250);
+				cxt.moveTo(550,100);//银晨嵌入式人脸识别器-嵌入式人脸识别技术
+				cxt.lineTo(400,250);
 				cxt.stroke();
-				cxt.moveTo(450,200);//人脸识别-机构
-				cxt.lineTo(300,250);
+				cxt.moveTo(550,400);//银晨嵌入式人脸识别器-嵌入式人脸识别技术
+				cxt.lineTo(400,250);
 				cxt.stroke();
-				cxt.moveTo(180,380);//人脸识别-专利
-				cxt.lineTo(300,250);
+				cxt.moveTo(250,400);//银晨嵌入式人脸识别器-嵌入式人脸识别技术
+				cxt.lineTo(400,250);
 				cxt.stroke();
-				cxt.moveTo(450,300);//人脸识别-技术
-				cxt.lineTo(300,250);
+				cxt.moveTo(250,100);//银晨嵌入式人脸识别器-嵌入式人脸识别技术
+				cxt.lineTo(400,250);
 				cxt.stroke();
-				 //人脸识别
+			    //银晨嵌入式人脸识别器
 				cxt.fillStyle="#ff8c00";  //背景色
 				cxt.beginPath();
-				cxt.arc(300,250,30,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.arc(400,250,30,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
 				cxt.closePath();
 				cxt.fill();
 				var gradient=cxt.createLinearGradient(0,0,c.width,0);
 				gradient.addColorStop("0","black");
 				cxt.fillStyle=gradient;
 				cxt.font="15px Arial";
-				cxt.fillText("人脸识别",270,250);
+				cxt.fillText("人脸识别",370,250);
+				//嵌入式人脸识别技术
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(550,100,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("小米科技有限公司",510,70);
+				//多功能感知技术研究
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(550,400,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("北京格林深瞳信息技术有限公司",520,430);
+				//基于语音识别的感知技术
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(250,400,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("北京旷世科技有限公司",200,430);
+				//李怀中
+				cxt.fillStyle="#990066";  //背景色
+				cxt.beginPath();
+				cxt.arc(250,100,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.closePath();
+				cxt.fill();
+				var gradient=cxt.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","black");
+				cxt.fillStyle=gradient;
+				cxt.font="15px Arial";
+				cxt.fillText("衣+",230,70);
 				//机构
-				cxt.fillStyle="#990066";  //背景色
-				cxt.beginPath();
-				cxt.arc(450,200,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
-				cxt.closePath();
-				cxt.fill();
-				var gradient=cxt.createLinearGradient(0,0,c.width,0);
-				gradient.addColorStop("0","black");
-				cxt.fillStyle=gradient;
-				cxt.font="15px Arial";
-				cxt.fillText("小米科技有限公司",470,200);
-				//成果
-				cxt.fillStyle="#990066";  //背景色
-				cxt.beginPath();
-				cxt.arc(100,220,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
-				cxt.closePath();
-				cxt.fill();
-				var gradient=cxt.createLinearGradient(0,0,c.width,0);
-				gradient.addColorStop("0","black");
-				cxt.fillStyle=gradient;
-				cxt.font="15px Arial";
-				cxt.fillText("北京格林深瞳信息技术有限公司",100,200);
-				//专利
-				cxt.fillStyle="#990066";  //背景色
-				cxt.beginPath();
-				cxt.arc(180,380,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
-				cxt.closePath();
-				cxt.fill();
-				var gradient=cxt.createLinearGradient(0,0,c.width,0);
-				gradient.addColorStop("0","black");
-				cxt.fillStyle=gradient;
-				cxt.font="15px Arial";
-				cxt.fillText("北京旷世科技有限公司",180,415);
-				//技术
-				cxt.fillStyle="#990066";  //背景色
-				cxt.beginPath();
-				cxt.arc(450,300,20,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
-				cxt.closePath();
-				cxt.fill();
-				var gradient=cxt.createLinearGradient(0,0,c.width,0);
-				gradient.addColorStop("0","black");
-				cxt.fillStyle=gradient;
-				cxt.font="15px Arial";
-				cxt.fillText("衣+",470,305);
-				//技术名称
 				cxt.fillStyle="#ff8c00";  //背景色
 				cxt.beginPath();
-				cxt.arc(300,550,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.arc(400,500,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
 				cxt.closePath();
 				cxt.fill();
 				var gradient=cxt.createLinearGradient(0,0,c.width,0);
 				gradient.addColorStop("0","black");
 				cxt.fillStyle=gradient;
 				cxt.font="15px Arial";
-				cxt.fillText("领域",325,555);
-				//相关细分
+				cxt.fillText("领域",425,505);
 				cxt.fillStyle="#990066";  //背景色
 				cxt.beginPath();
-				cxt.arc(300,600,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
+				cxt.arc(400,550,15,0,2*Math.PI); //画圆(x,y,r,start,顺时针的圆)
 				cxt.closePath();
 				cxt.fill();
 				var gradient=cxt.createLinearGradient(0,0,c.width,0);
 				gradient.addColorStop("0","black");
 				cxt.fillStyle=gradient;
 				cxt.font="15px Arial";
-				cxt.fillText("相关机构",325,605);
+				cxt.fillText("相关机构",425,555);
 			</script>
 	</body>
 </html>
